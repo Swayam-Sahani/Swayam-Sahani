@@ -1,0 +1,37 @@
+{
+  "brand": "Swayam personal portfolio",
+  "visual_direction": "Bright editorial photography, warm ivory and clean white, confident denim blue accents, deep ink details, natural daylight, spacious composition. Keep imagery human and credible, never like generic SaaS stock art.",
+  "prompts": [
+    {
+      "id": "swayam-portrait",
+      "file": "public/images/swayam-portrait.png",
+      "placement": "Opening work chapter portrait. Replaceable personal image, not a client asset.",
+      "aspect_ratio": "1:1",
+      "reference_image": "Use the user's shared portrait as an identity and appearance reference. Preserve the same person and recognizable facial features; do not substitute another person.",
+      "prompt": "Create a high-resolution, natural editorial portrait of the same South Asian man shown in the supplied reference photo. Keep his identity, age, facial features, skin tone, hair, and approachable expression consistent with the reference. He is standing casually in a bright, uncluttered creative workspace, wearing a warm cream T-shirt and medium blue trousers inspired by the reference clothing. Soft daylight from one large window, natural skin texture, subtle real-world imperfections, photographed on a 50mm lens, gentle depth of field, warm ivory and blue color story, realistic editorial photography, relaxed confident posture, subject placed on the right third with generous clean negative space on the left for website layout. No typography, no logo, no fake business props, no visible screen text, no exaggerated retouching.",
+      "negative_prompt": "different person, changed identity, face swap, extra fingers, malformed hands, plastic skin, beauty filter, corporate stock-photo smile, staged handshake, fake award, fake client logo, fake testimonial, text, watermark, CGI, 3D render, illustration, oversaturated colors, hard flash"
+    },
+    {
+      "id": "seo-worktable-editorial",
+      "file": "public/images/seo-worktable-editorial.webp",
+      "placement": "Supporting image in the SEO experience chapter. Editorial atmosphere only; not represented as a real client project.",
+      "aspect_ratio": "3:2",
+      "prompt": "Bright editorial photograph of a web developer and SEO strategist's real worktable, viewed at a slight angle. A warm ivory paper site map, a few neatly arranged blue sticky tabs, a simple hand-drawn page hierarchy diagram with no legible words, a laptop edge with an abstract out-of-focus webpage, a pen, and natural window light. Restrained denim-blue accents, deep ink shadows, calm premium-minimal art direction, medium-format photographic realism, tactile paper grain, believable lived-in workspace, generous breathing room, visually clear subject hierarchy. The image illustrates planning and information architecture only; it must not look like a finished client website or claim a business result. No readable text, logos, charts with numbers, badges, or metrics.",
+      "negative_prompt": "legible text, gibberish text, recognizable website logo, fake Google logo, fake analytics dashboard, upward graph, fabricated statistics, client name, testimonial quote, watermark, neon gradient, CGI, 3D render, clay, overly perfect staged stock photography, clutter, dark low-key lighting"
+    },
+    {
+      "id": "search-to-structure-editorial",
+      "file": "public/images/search-to-structure-editorial.webp",
+      "placement": "Optional quiet background texture behind the bespoke search-intent interaction. The actual interactive path remains real HTML/SVG.",
+      "aspect_ratio": "16:9",
+      "prompt": "High-key editorial still life photographed straight down: separate sheets of warm ivory paper arranged as a clear progression from a small search note, to a tidy website page outline, to a simple contact card. Thin denim-blue lines physically connect the sheets like a hand-drawn route. One soft daylight source, restrained blue and ink palette, subtle paper texture and natural shadows, carefully spaced objects, broad clean negative space, premium editorial art direction, photorealistic, no legible text. This is a conceptual process illustration, not a screenshot, not a client case study, and it shows no performance data.",
+      "negative_prompt": "readable text, fake search engine logo, fake browser UI, analytics dashboard, numerical metrics, fabricated results, arrows with labels, watermark, logo, neon, violet-blue gradient, CGI, clay render, 3D icons, visual clutter"
+    }
+  ],
+  "usage_notes": [
+    "The current opening portrait is the user's supplied photo. Replace it at public/images/swayam-portrait.png. For a higher resolution option, generate the portrait from the user's reference image so the result depicts Swayam rather than a fabricated person.",
+    "Do not add the supporting images as completed client work. They are editorial illustrations of process only.",
+    "Keep the site's actual words, diagram labels, and interaction in Next.js markup/SVG, not baked into generated images.",
+    "The site must still have a complete layout when these optional files are absent."
+  ]
+}
